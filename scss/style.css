@@ -1,0 +1,345 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  font-family: "Museo Sans Cyrl";
+}
+
+.container {
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url("../fonts/Museo-Sans-Cyrl-100.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url("../fonts/Museo-Sans-Cyrl-300.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url("../fonts/Museo-Sans-Cyrl-500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url("../fonts/Museo-Sans-Cyrl-700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url("../fonts/Museo-Sans-Cyrl-900.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+body {
+  --main-color-text: rgba(26, 26, 26, 1);
+  --submain-color-text: rgba(148, 148, 148, 1);
+  --main-background-color: rgba(255, 255, 255, 1);
+}
+
+.intro {
+  margin: 40px 0 80px 0;
+}
+.intro__wrapper {
+  background: url("../../images/intro-bg.svg") center bottom no-repeat;
+  background: rgb(147, 187, 234);
+  border-radius: 40px;
+  overflow: hidden;
+  padding: 40px 40px 54px 40px;
+}
+.intro__title {
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.intro__subtitle {
+  max-width: 535px;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 23.8px;
+  text-align: center;
+  margin: 0 auto 40px auto;
+}
+.intro .menu__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 8px;
+}
+.intro .menu__item {
+  max-width: 160px;
+  width: 100%;
+  background: var(--main-background-color);
+  border-radius: 12px;
+}
+.intro .menu__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-color-text);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  white-space: nowrap;
+  padding: 15px 0;
+}
+.intro .menu__icon {
+  max-width: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+.intro .menu__icon img {
+  width: 100%;
+}
+
+.social {
+  margin-bottom: 80px;
+}
+.social__wrapper {
+  max-width: 996px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--main-background-color);
+  box-shadow: 0px 20px 60px rgba(26, 26, 26, 0.05);
+  border-radius: 40px;
+  padding: 42px 40px;
+  margin: 0 auto;
+}
+.social__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.social__subtitle {
+  color: var(--main-color-text);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 16px;
+}
+.social__title {
+  color: var(--main-color-text);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 32px;
+  margin-bottom: 0;
+}
+.social__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 14px;
+}
+.social__logo {
+  max-width: 56px;
+}
+.social__logo img {
+  width: 100%;
+}
+
+.faq {
+  margin-bottom: 65px;
+}
+.faq__title {
+  color: var(--main-color-text);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 32px;
+  margin-bottom: 17px;
+}
+.faq .swiper {
+  width: 1230px;
+  padding: 15px;
+  transform: translateX(-15px);
+}
+.faq .swiper .swiper-button-disabled {
+  opacity: 0;
+}
+.faq .slider__nav {
+  width: 44px;
+  height: 44px;
+  background: var(--main-background-color);
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.09);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.faq .slider__nav::after {
+  display: none;
+}
+.faq .slider__nav_prev {
+  transform: translateX(6px);
+}
+.faq .slider__nav_next {
+  transform: translateX(-6px);
+}
+.faq .slider__nav-arrow {
+  max-width: 24px;
+  max-height: 24px;
+}
+.faq .slider__nav-arrow img {
+  width: 100%;
+  height: 100%;
+}
+.faq .slide__wrapper {
+  height: 160px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: var(--main-background-color);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.07);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.faq .slide__question {
+  padding: 16px;
+}
+.faq .slide__title {
+  color: var(--main-color-text);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.faq .slide__text {
+  color: var(--submain-color-text);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18.2px;
+}
+.faq .slide__icon {
+  max-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.faq .slide__icon img {
+  height: 100%;
+}
+
+.reference {
+  margin-bottom: 80px;
+}
+.reference__title {
+  color: var(--main-color-text);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.reference .know {
+  max-width: 996px;
+  width: 100%;
+  margin: 0 auto;
+}
+.reference .know__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 12px;
+}
+.reference .know__item {
+  width: 100%;
+  background: var(--main-background-color);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}
+.reference .know__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 16px 20px 24px;
+}
+.reference .know__desc {
+  max-width: 492px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  grid-gap: 4px;
+}
+.reference .know__title {
+  color: var(--main-color-text);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.reference .know__text {
+  color: var(--submain-color-text);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18.2px;
+}
+.reference .know__arrow {
+  max-width: 24px;
+  max-height: 24px;
+  opacity: 0.5;
+}
+.reference .know__arrow img {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */

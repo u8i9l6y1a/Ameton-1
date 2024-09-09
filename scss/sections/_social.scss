@@ -1,0 +1,44 @@
+.social {
+  margin-bottom: 80px;
+  &__wrapper {
+    max-width: 996px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--main-background-color);
+    box-shadow: 0px 20px 60px rgba(26, 26, 26, .05);
+    border-radius: 40px;
+    padding: 42px 40px;
+    margin: 0 auto;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  &__subtitle {
+    color: var(--main-color-text);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 16px;
+  }
+  &__title {
+    @include h2-title;
+    margin-bottom: 0;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 14px;
+  }
+  &__logo {
+    max-width: 56px;
+    img {
+      width: 100%;
+    }
+  }
+}

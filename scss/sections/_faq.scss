@@ -1,0 +1,75 @@
+.faq {
+  margin-bottom: 65px;
+  &__title {
+    @include h2-title;
+    margin-bottom: 17px;
+  }
+  .swiper {
+    width: 1230px;
+    // width: 100%;
+    padding: 15px;
+    transform: translateX(-15px);
+    .swiper-button-disabled {
+      opacity: 0;
+    }
+    // @media screen and (max-width: 1200px) {
+      
+    // }
+  }
+  .slider {
+    &__nav {
+      width: 44px;
+      height: 44px;
+      background: var(--main-background-color);
+      box-shadow: 0px 1px 7px rgba(0, 0, 0, .09);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      &::after {
+        display: none;
+      }
+      &_prev {
+        transform: translateX(6px);
+      }
+      &_next {
+        transform: translateX(-6px);
+      }
+    }
+    &__nav-arrow {
+      @include arrow;
+    }
+  }
+  .slide {
+    &__wrapper {
+      height: 160px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      background: var(--main-background-color);
+      box-shadow: 0px 0px 12px rgba(0, 0, 0, .07);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    &__question {
+      padding: 16px;
+    }
+    &__title {
+      @include h3-title;
+      margin-bottom: 8px;
+    }
+    &__text {
+      @include main-text;
+    }
+    &__icon {
+      max-height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
